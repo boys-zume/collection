@@ -9,13 +9,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("com.boys.collection.dal.dao")
-public class Starter {
+public class Application {
 
     /**
      * @param args
      */
     public static void main(String[] args) {
-        SpringApplication.run(Starter.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }

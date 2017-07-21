@@ -2,10 +2,14 @@ package com.boys.collection.dal.entity;
 
 import com.boys.collection.dal.enums.SexEnum;
 
+import java.io.Serializable;
+
 /**
  * Created by yangweijie on 2017/7/21.
  */
-public class UserDO {
+public class UserDO implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private Long id;
 
@@ -16,6 +20,17 @@ public class UserDO {
     private String nickName;
 
     private String password;
+
+    public UserDO() {
+        super();
+    }
+
+    public UserDO(String userName, String password, SexEnum sex) {
+        super();
+        this.password = password;
+        this.userName = userName;
+        this.sex = sex;
+    }
 
     public Long getId() {
         return id;
@@ -55,6 +70,11 @@ public class UserDO {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "userName " + this.userName + ", password " + this.password + "sex " + sex.name();
     }
 
 }
