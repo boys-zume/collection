@@ -1,4 +1,4 @@
-package com.boys.collection;
+package com.boys.collection.web;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
