@@ -25,4 +25,8 @@
 
     </dependencies>
 
+    <build>
+        <finalName>collection-common</finalName>
+    </build>
+
 </project>

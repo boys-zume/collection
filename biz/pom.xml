@@ -42,4 +42,8 @@
 
     </dependencies>
 
+    <build>
+        <finalName>collection-biz</finalName>
+    </build>
+
 </project>

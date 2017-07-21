@@ -57,4 +57,9 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <finalName>collection-dal</finalName>
+    </build>
+
 </project>

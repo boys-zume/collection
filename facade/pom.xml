@@ -12,4 +12,7 @@
     <artifactId>facade</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <build>
+        <finalName>collection-facade</finalName>
+    </build>
 </project>
