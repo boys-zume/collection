@@ -11,26 +11,26 @@ import java.util.List;
  */
 public interface UserDAO {
 
-    @Select("SELECT * FROM users")
+    @Select("SELECT * FROM collection_user")
     @Results({
-            @Result(property = "sex",  column = "sex", javaType = SexEnum.class),
-            @Result(property = "nickName", column = "nick_name")
+            @Result(property = "realName",  column = "real_name"),
+            @Result(property = "userName", column = "user_name")
     })
     List<UserDO> getAll();
 
-    @Select("SELECT * FROM users WHERE id = #{id}")
+    @Select("SELECT * FROM collection_user WHERE id = #{id}")
     @Results({
-            @Result(property = "sex",  column = "sex", javaType = SexEnum.class),
-            @Result(property = "nickName", column = "nick_name")
+            @Result(property = "realName",  column = "real_name"),
+            @Result(property = "userName", column = "user_name")
     })
     UserDO getOne(Long id);
 
-    @Insert("INSERT INTO users(user_name,nick_name,password,sex) VALUES(#{userName} , #{nickName}, #{password}, #{sex})")
+    @Insert("INSERT INTO collection_user(user_name,real_name,password) VALUES(#{userName} , #{realName}, #{password})")
     void insert(UserDO user);
 
-    @Update("UPDATE users SET user_name=#{userName},nick_name=#{nickName} WHERE id =#{id}")
+    @Update("UPDATE collection_user SET user_name=#{userName},real_name=#{realName} WHERE id =#{id}")
     void update(UserDO user);
 
-    @Delete("DELETE FROM users WHERE id =#{id}")
+    @Delete("DELETE FROM collection_user WHERE id =#{id}")
     void delete(Long id);
 }

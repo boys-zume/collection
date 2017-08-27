@@ -1,6 +1,5 @@
-package com.boys.collection.web;
+package com.boys.collection;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Created by yangweijie on 2017/7/21.
  */
 @SpringBootApplication
-@MapperScan("com.boys.collection.dal.dao")
+//@MapperScan("com.boys.collection.dal.dao")
 public class Application {
 
     /**

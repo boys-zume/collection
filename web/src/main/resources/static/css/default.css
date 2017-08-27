@@ -1,0 +1,138 @@
+/*应用级别公用的css */
+/*.开头的代表classs */
+
+/*主体区域高度设置为90%*/
+/*.content-height{border:1pxsolid#F00;min-height:400px} */
+.content-height{
+    /*border:1px;*/
+    /*min-height:550px;*/
+    height:90%;
+}
+
+/*设置为100%高度*/
+.full-height{
+    height:100%;
+}
+
+/*页尾高度*/
+.footer-height{
+    border:1px;
+    height:10px;
+}
+
+/*header上的单元-高度*/
+.headerUnit{
+    /*height:50px;*/
+    height:80px;
+}
+
+/*中间内容区域style*/
+.main-center{
+    /*border:1pxsolid#ddd;*/
+    /*background-color:#fff;*/
+}
+
+/*左侧导航子菜单缩进*/
+.left-menu{
+    border:1px;
+    solid:#ddd;
+    background-color:#ffe;
+}
+
+/*左侧导航子菜单缩进*/
+.subMenuMargin{
+    margin-left:10px;
+}
+
+.welcomeLogoStyle{
+    width:300px;
+    margin-left:250px;
+    margin-top:50px;
+}
+
+.logoStyle{
+    width:60px;
+    margin:0 auto;
+}
+
+/*heaer背景色*/
+.bg-header{
+    background-color:#dff0d8;
+}
+
+/*heaer背景色-之二*/
+.bg-header2{
+    /*background-color:#1e8c00;*/
+    /*background:#09C;*/
+    background-color:#d9edf7;
+}
+
+/*用于标题-背景*/
+.bg-title{
+    background-color:#2A3444;
+}
+
+/*用于标题字体-白色*/
+.color-white{
+    color:#fff;
+}
+
+/*用于表格标题-背景*/
+.table-bg-title{
+    /*background-color:#2A3466;*/
+    /*background-color:#2Aff00;*/
+    /*background-color:#eb9316;*/
+    background-color:#fff;
+}
+
+/*header区常用链接区域，角落对齐，弄个自己的补丁*/
+.corner-patch{
+    margin-top:auto;
+    margin-right:10px;
+    /*!*margin-top:5px;*!*/
+}
+
+/*无margin,无pading，覆盖其他设置了margin的地方*/
+.no-margin-padding{
+    margin:0px;
+    padding:0px;
+}
+
+/*中间部分，主体区域的margin设置*/
+.main-margin{
+    margin-left:15px;
+    margin-right:15px;
+    margin-top:1px;
+    margin-bottom:0px;
+}
+
+/*方便临时调试之用*/
+.temp-style{
+    /*min-height:800px;*/
+    height:90%;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+    background-color:#fff;
+}
+
+/*隐藏信息style*/
+.hide-info{
+    color:#fff;
+    text-align:center;
+}
+
+.ops-big-font{
+    font-size:20px;
+}
+
+/*上方增加一些空间*/
+.ops-margin-top-separate{
+    margin-top:20px;
+}
+

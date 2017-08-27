@@ -13,11 +13,9 @@ public class UserDO implements Serializable {
 
     private Long id;
 
-    private SexEnum sex;
-
     private String userName;
 
-    private String nickName;
+    private String realName;
 
     private String password;
 
@@ -25,11 +23,11 @@ public class UserDO implements Serializable {
         super();
     }
 
-    public UserDO(String userName, String password, SexEnum sex) {
+    public UserDO(String userName, String password, String realName) {
         super();
         this.password = password;
         this.userName = userName;
-        this.sex = sex;
+        this.realName = realName;
     }
 
     public Long getId() {
@@ -40,12 +38,12 @@ public class UserDO implements Serializable {
         this.id = id;
     }
 
-    public SexEnum getSex() {
-        return sex;
+    public String getRealName() {
+        return realName;
     }
 
-    public void setSex(SexEnum sex) {
-        this.sex = sex;
+    public void setRealName(String realName) {
+        this.realName = realName;
     }
 
     public String getUserName() {
@@ -56,13 +54,6 @@ public class UserDO implements Serializable {
         this.userName = userName;
     }
 
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
 
     public String getPassword() {
         return password;
@@ -74,7 +65,7 @@ public class UserDO implements Serializable {
 
     @Override
     public String toString() {
-        return "userName " + this.userName + ", password " + this.password + "sex " + sex.name();
+        return "userName " + this.userName + ", password " + this.password + "realName " + this.realName;
     }
 
 }
