@@ -1,8 +1,8 @@
-<!-- 左侧菜单栏 -->
-<ul class="list-group left-menu">
-        <a id="tradeIndex" class="list-group-item" href="/trade/tradeIndex.html">一级菜单</a>
-        <ul class="list-group subMenuMargin">
-            <a id="orderDetail" class="list-group-item" href="/trade/order/cuntaoOrderDetail.html">二级菜单</a>
-        </ul>
-</ul>
-
+<div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+        <li class="active"><a href="#">菜单一 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">菜单二</a></li>
+        <li><a href="#">菜单三</a></li>
+        <li><a href="#">菜单四</a></li>
+    </ul>
+</div>

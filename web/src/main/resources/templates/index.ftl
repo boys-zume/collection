@@ -1,56 +1,70 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>首页</title>
-        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/default.css" rel="stylesheet">
-        <script src="jquery/jquery-1.12.4.min.js" type="text/javascript"></script>
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <input type="hidden" id="menuId" value="${menuId}"/>
-        <!-- 页头 -->
-        <#include "control/header.ftl">
+<#include "control/header.ftl" >
 
-        <div class="container-fluid main-margin content-height" >
-            <!-- 中间部位 -->
-            <div class="row">
-                <div class="col-lg-2 no-margin-padding">
-                    <!-- 左侧菜单栏 -->
-                    <#include "control/leftMenu.ftl">
-                </div>
-            </div>
-            <!-- 主体内容区域 -->
-            <div class="col-lg-10">
-               <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <h4 class="text-center">欢迎光临</h4>
-                            <img src="image/collection.jpg" class="welcomeLogoStyle" />
-                        </div>
-                        <div class="col-lg-3">
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top :100px">
-                        <div class="col-lg-6 col-lg-offset-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">常用功能导航</div>
-                                <div class="panel-body">
-                                    <a href="http://localhost:8080/demo/demoIndex.html">开发辅助-常见demo</a> |||
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- 页尾 -->
-        <div class="container-fluid">
-            <div class="row">
-                <#include "control/footer.ftl">
-            </div>
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">仪表盘</h1>
+
+    <div class="row placeholders">
+        <div class="col-xs-6 col-sm-3 placeholder">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>指标1</h4>
+            <span class="text-muted">指标说明1</span>
         </div>
-    </body>
-</html>
+        <div class="col-xs-6 col-sm-3 placeholder">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>指标2</h4>
+            <span class="text-muted">指标说明2</span>
+        </div>
+        <div class="col-xs-6 col-sm-3 placeholder">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>指标3</h4>
+            <span class="text-muted">指标说明3</span>
+        </div>
+        <div class="col-xs-6 col-sm-3 placeholder">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+            <h4>指标4</h4>
+            <span class="text-muted">指标说明4</span>
+        </div>
+    </div>
+
+    <h2 class="sub-header">列表样式</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1,001</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>1,002</td>
+                <td>amet</td>
+                <td>consectetur</td>
+                <td>adipiscing</td>
+                <td>elit</td>
+            </tr>
+            <tr>
+                <td>1,003</td>
+                <td>Integer</td>
+                <td>nec</td>
+                <td>odio</td>
+                <td>Praesent</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<#include "control/footer.ftl" >
